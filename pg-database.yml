@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: cctv_user
+      POSTGRES_DB: cctv_db
+    ports:
+      - 5437:5432
